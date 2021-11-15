@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="I am a Full Stack Developer and this is my portfolio.">
+  <meta name="keywords" content="Developer, Portfolio, Full Stack Developer, HTML, CSS, JavaScript, Java, Bootstrap, Angular, React, NodeJS">
+  <meta name="author" content="Sameer Bhilare">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="image" content="https://www.sameerbhilare.netlify.app/images/site-img.png" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!--  Essential META Tags -->
+  <meta property="og:title" content="Sameer Bhilare | Portfolio">
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://www.sameerbhilare.netlify.app/images/site-img.png">
+  <meta property="og:url" content="https://www.sameerbhilare.netlify.app/index.html">
+  <meta property="og:description" content="I am a Full Stack Developer and this is my portfolio.">
+  <meta property="og:site_name" content="Sameer Bhilare | Portfolio">
+  
+  <!--  Non-Essential, But Required for Analytics -->
+  <meta name="twitter:title" content="Sameer Bhilare | Portfolio">
+  <meta name="twitter:description" content="I am a Full Stack Developer and this is my portfolio.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@sameer59">
+  <meta property="twitter:image" content="https://www.sameerbhilare.netlify.app/images/site-img.png">
+
+  <link rel="icon" href="./images/favicon.jpg">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Sameer Bhilare | Portfolio</title>
+</head>
+<body class="bg-light" style="position: relative;" data-spy="scroll" data-target="#mynavbar">
+  
+  <!-- =================================================================================================== -->
+  <!-- Navigation -->
+  <header>
+  <nav class="py-0 navbar navbar-expand-lg fixed-top nav-menu bg-light" id="nav">
+      
+    <div class="container">
+
+      <!-- not using navbar-logo to avoid unnecessary padding at the top and causing main content visible beneath it when scrolled -->
+      <a href="#" class="color-primary d-none d-md-inline-block" id="logo">
+        <img src="./images/logo-nobg.png" alt="Logo" class="img-fluid"/>
+      </a>
+
+      <!-- custom nav toggler -->
+      <!-- By default, toggler will be disabled. It will be enabled, when document is ready. -->
+      <button type="button" class="pr-0 mt-4 ml-auto navbar-toggler nav-button" disabled data-toggle="collapse" data-target="#mynavbar">
+        <span class="bg-dark line1"></span>
+        <span class="bg-dark line2"></span>
+        <span class="bg-dark line3"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end text-uppercase font-weight-bold bg-light bg-md-white" id="mynavbar">
+        <ul class="float-right navbar-nav">
+          <li class="nav-item">
+            <a href="#banner" class="m-2 nav-link menu-item">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="m-2 nav-link menu-item">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="m-2 nav-link menu-item">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#timeline" class="m-2 nav-link menu-item">Timeline</a>
+          </li>
+          <li class="nav-item">
+            <a href="#work" class="m-2 nav-link menu-item">Work</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="m-2 nav-link menu-item">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+  </header>
+
+  <main class="main">
+    <!-- =================================================================================================== -->
+    <!-- Banner -->
+    <section class="banner-section fromTopHeader d-flex justify-content-center align-items-center" id="banner">
+      
+      <div class="container">
+        <div class="row d-flex justify-content-between align-items-center">
+          <div class="col-md-7">
+            <h1 class="pb-2 mb-4 display-3 display-md-2">Hi</h1>
+            <h1 class="display-3 display-md-2">
+              <span style="border-top: 4px solid #007bff">I'm</span> <span class="color-primary">Sameer</span>
+            </h1>
+            <h2>Full Stack Web Developer</h2>
+            <div class="home-social">
+              <a href="https://in.linkedin.com/in/sameer-bhilare-083a1516" target="_blank" class="mr-4"><i class="fab fa-linkedin-in text-dark"></i></a>
+              <a href="https://twitter.com/sameer59" target="_blank" class="mr-4"><i class="fab fa-twitter text-dark"></i></a>
+              <a href="https://github.com/sameerbhilare" target="_blank" class="mr-4"><i class="fab fa-github text-dark"></i></a>
+            </div>
+          </div>
+      
+          <!-- circle with a cutout image and shadow as well -->
+          <!-- <div class="mt-5 col-md-4 parent-wrapper">
+            <div class="m-auto img-wrapper">
+              <img src="./images/Sameer.jpg" alt="Photo of Sameer" class="img-fluid" id="img-profile">
+            </div>
+          </div> -->
+          <div class="mt-5 col-md-4 parent-wrapper">
+            <div class="m-auto img-wrapper">
+              <img src="./images/Sameer.jpg" alt="Photo of Sameer" class="img-fluid" id="img-profile">
+            </div>
+          </div>
+
+        </div>
+        
+      </div>
+    </section>
+
+    
+    <!-- =================================================================================================== -->
+    <!-- About -->
+    <section id="about" class="mb-5 about-section">
+      <div class="container">
+        <!-- title -->
+        <div class="text-center row">
+          <div class="m-4 col about-title">
+            <h1 class="mb-3 display-5 text-uppercase">About Me</h1>
+            <div class="underline"></div>
+          </div>
+        </div>
+        <div class="mt-5 row d-flex justify-content-between align-items-center">
+          <!-- do not show about image on small screen -->
+          <div class="d-none d-md-block col-md-5">
+            <!-- <img src="https://via.placeholder.com/864X1080" alt="image" class="img-fluid img-thumbnail"> -->
+            <img src="./images/Sameer-About.png" alt="image" class="img-fluid about-img">
+          </div>
+          <div class="px-5 mx-auto text-justify col-md-7 about-description">
+            <p class="lead">
+              My name is <mark>Sameer Bhilare</mark> and I am a Full Stack Web Developer who specializes in creating dynamic and beautiful web applications. 
+            </p>
+            <p class="lead">
+              I have been in the field for more than 11 years, and have been loving every minute of it. 
+              I am a professional developer and overall thinker who strives to achieve the best results. 
+            </p>
+            <p class="lead">
+              My mantra for life is &#8212; <br> <span class="font-italic"><mark>&quot;Do what you love. Love what you do.&quot;</mark></span>
+              <i class="far fa-smile"></i>
+            </p>
+            <p class="lead">
+              Check out the Work section below to see what I’ve been up to lately.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================================================== -->
+    <!-- Skills -->
+    <section id="skills" class="mb-5 skills-section">
+      <div class="container">
+        <!-- title -->
+        <div class="text-center row">
+          <div class="m-4 col skills-title">
+            <h1 class="mb-3 display-5 text-uppercase">Skills</h1>
+            <div class="underline"></div>
+          </div>
+        </div>
+
+        <!-- frontend -->
+        <div class="row d-flex justify-content-between align-items-center" style="margin-top: 4rem;">
+          <!-- progress -->
+          <div class="order-2 col-md-7 order-md-1 frontend-progress">
+            <div class="skill font-weight-bold">
+              <div class="skill_title d-flex justify-content-between ">
+                <div class="skill_name"><i class="mr-3 fab fa-html5 fa-2x" style="color: #e34c26 ;"></i>HTML</div>
+                <div class="skill_percentage">90%</div>
+              </div>
+              <div class="skill_bar" style="width: 90%;">
+                <div class="skill_bar-slider"></div>
+              </div>
+            </div>
+
+            <div class="skill font-weight-bold">
+              <div class="skill_title d-flex justify-content-between ">
+                <div class="skill_name"><i class="mr-3 fab fa-css3-alt fa-2x" style="color: #264de4 ;"></i>CSS / Bootstrap / Tailwind</div>
+                <div class="skill_percentage">70%</div>
+              </div>
+              <div class="skill_bar" style="width: 70%;">
+                <div class="skill_bar-slider"></div>
+              </div>
+            </div>
+                        
+            <div class="skill font-weight-bold">
+              <div class="skill_title d-flex justify-content-between ">
+                <div class="skill_name">
+                  <svg width="2em" class="mr-3" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+                    <g>
+                        <path d="M0,0 L256,0 L256,256 L0,256 L0,0 Z" fill="#f0db4f"></path>
+                        <path d="M67.311746,213.932292 L86.902654,202.076241 C90.6821079,208.777346 94.1202286,214.447137 102.367086,214.447137 C110.272203,214.447137 115.256076,211.354819 115.256076,199.326883 L115.256076,117.528787 L139.313575,117.528787 L139.313575,199.666997 C139.313575,224.58433 124.707759,235.925943 103.3984,235.925943 C84.1532952,235.925943 72.9819429,225.958603 67.3113397,213.93026" fill="#000000"></path>
+                        <path d="M152.380952,211.354413 L171.969422,200.0128 C177.125994,208.433981 183.827911,214.619835 195.684368,214.619835 C205.652521,214.619835 212.009041,209.635962 212.009041,202.762159 C212.009041,194.513676 205.479416,191.592025 194.481168,186.78207 L188.468419,184.202565 C171.111213,176.81473 159.597308,167.53534 159.597308,147.944838 C159.597308,129.901308 173.344508,116.153295 194.825752,116.153295 C210.119924,116.153295 221.117765,121.48094 229.021663,135.400432 L210.29059,147.428775 C206.166146,140.040127 201.699556,137.119289 194.826159,137.119289 C187.78047,137.119289 183.312254,141.587098 183.312254,147.428775 C183.312254,154.646349 187.78047,157.568406 198.089956,162.036622 L204.103924,164.614095 C224.553448,173.378641 236.067352,182.313448 236.067352,202.418387 C236.067352,224.071924 219.055137,235.927975 196.200432,235.927975 C173.860978,235.927975 159.425829,225.274311 152.381359,211.354413" fill="#000000"></path>
+                    </g>
+                </svg>
+                  <!-- <i class="mr-3 fab fa-js-square fa-2x" style="color:#f0db4f"></i> -->
+                  JavaScript / TypeScript</div>
+                <div class="skill_percentage">75%</div>
+              </div>
+              <div class="skill_bar" style="width: 75%;">
+                <div class="skill_bar-slider"></div>
+              </div>
+            </div>
+           
+            <div class="skill font-weight-bold">
+              <div class="skill_title d-flex justify-content-between ">
+                <div class="skill_name"><i class="mr-3 fab fa-angular fa-2x" style="color:#dd1b16"></i>Angular</div>
+                <div class="skill_percentage">60%</div>
+              </div>
+              <div class="skill_bar" style="width: 60%;">
+                <div class="skill_bar-slider"></div>
+              </div>
+            </div>
+            
+            <div class="skill font-weight-bold">
+              <div class="skill_title d-flex justify-content-between ">
+                <div class="skill_name"><i class="mr-3 fab fa-react fa-2x" style="color:#61DBFB"></i>React / NextJS / GatsbyJS</div>
+                <div class="skill_percentage">55%</div>
+              </div>
+              <div class="skill_bar" style="width: 55%;">
+                <div class="skill_bar-slider"></div>
+              </div>
+            </div>
+
+            <div class="skill font-weight-bold">
+              <div class="skill_title d-flex justify-content-between ">
+                <!-- <div class="skill_name"><img src="./images/logo-ionic.svg" alt="" class="img-fluid color-primary"> Ionic</div> -->
+                <div class="skill_name">
+                  <svg width="2em" xmlns="http://www.w3.org/2000/svg" class="mr-3 ionicon" style="fill:#498AFF" viewBox="0 0 512 512">
+                    <title>Logo Ionic</title>
+                    <path d="M256 153.9A102.1 102.1 0 10358.1 256 102.23 102.23 0 00256 153.9z"/>
+                    <circle cx="402.59" cy="116.45" r="46.52"/>
+                    <path d="M459.86 163.2l-1.95-4.28-3.11 3.52a70 70 0 01-28.06 19.32l-3 1.1 1.22 2.93A181.43 181.43 0 01439 256c0 100.92-82.1 183-183 183S73 356.92 73 256 155.08 73 256 73a180.94 180.94 0 0178.43 17.7l2.87 1.3 1.25-2.92A70.19 70.19 0 01359.21 62l3.67-2.93-4.17-2.07A221.61 221.61 0 00256 32C132.49 32 32 132.49 32 256s100.49 224 224 224 224-100.49 224-224a222.19 222.19 0 00-20.14-92.8z"/>
+                  </svg>
+                  Ionic
+                </div>
+                <div class="skill_percentage">60%</div>
+              </div>
+              <div class="skill_bar" style="width: 60%;">
+                <div class="skill_bar-slider"></div>
+              </div>
+            </div>
+          </div>
+          <!-- description -->
+          <div class="order-1 px-3 mx-auto px-md-5 col-md-5 frontend-description order-md-2">
+            <h3 class="mb-3">Frontend</h3>
+            <p class="lead">Having experience with wide range of frontend technologies and frameworks.</p>
+          </div>
+        </div>
+
+        <!-- backend -->
+        <div class="row d-flex justify-content-between align-items-center" style="margin-top: 5rem;">
+          <!-- description -->
+          <div class="px-3 mx-auto px-md-5 col-md-5 backend-description">
+            <h3 class="mb-3">Backend</h3>
+            <p class="lead">Equally well blended with backend technologies and frameworks.</p>
+          </div>
+
+          <!-- progress -->
+          <div class="col-md-7 backend-progress">
+            <div class="skill font-weight-bold">
+              <div class="skill_title d-flex justify-content-between ">
+                <div class="skill_name"><i class="mr-3 fab fa-java fa-2x" style="color:#f89820"></i>Java / Spring Boot</div>
+                <div class="skill_percentage">85%</div>
+              </div>
+              <div class="skill_bar" style="width: 85%;">
+                <div class="skill_bar-slider"></div>
+              </div>
+            </div>
+                        
+            <div class="skill font-weight-bold">
+              <div class="skill_title d-flex justify-content-between ">
+                <div class="skill_name"><i class="mr-3 fab fa-node-js fa-2x" style="color:#3c873a "></i>NodeJS / ExpressJS / Socket.io / NestJS</div>
+                <div class="skill_percentage">75%</div>
+              </div>
+              <div class="skill_bar" style="width: 75%;">
+                <div class="skill_bar-slider"></div>
+              </div>
+            </div>
+            
+            <div class="skill font-weight-bold">
+              <div class="skill_title d-flex justify-content-between ">
+                <div class="skill_name">
+                  <svg width="1em" class="mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 598.88 1333.33" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd">
+                    <g fill-rule="nonzero">
+                      <path d="M295.27 3.65l35.58 66.83c8 12.33 16.67 23.25 26.87 33.42 29.79 29.79 58.08 60.99 83.5 94.41 60.28 79.16 100.95 167.07 129.98 262.14 17.42 58.08 26.87 117.66 27.58 177.9 2.91 180.11-58.83 334.76-183.31 463.28-20.33 20.33-42.08 39.16-65.41 55.91-12.33 0-18.17-9.46-23.25-18.16-9.45-15.96-15.25-34.17-18.16-52.29-4.38-21.8-7.25-43.58-5.83-66.08v-10.16c-1-2.17-11.87-1002.07-7.54-1007.19v.01z" fill="#599636"/>
+                      <path d="M295.27 1.43c-1.46-2.91-2.91-.71-4.38.71.71 14.58-4.38 27.58-12.33 40-8.75 12.33-20.33 21.8-31.96 31.96-64.57 55.91-115.4 123.45-156.11 198.98C36.33 374.74 8.41 483.68.5 598.38c-3.62 41.37 13.09 187.36 26.13 229.48 35.58 111.82 99.49 205.52 182.27 286.84 20.33 19.58 42.08 37.74 64.58 55.2 6.54 0 7.25-5.83 8.74-10.17 2.85-9.28 5.06-18.76 6.54-28.34l14.58-108.9L295.26 1.43z" fill="#6cac48"/>
+                      <path d="M330.85 1201.77c1.46-16.67 9.46-30.5 18.17-44.29-8.75-3.62-15.25-10.83-20.33-18.87-4.38-7.25-8-15.96-10.83-23.96-10.17-30.5-12.33-62.5-15.25-93.66v-18.87c-3.62 2.91-4.38 27.58-4.38 31.25-2.03 32.85-6.54 65.8-13.08 98.05-2.17 13.08-3.62 26.12-11.67 37.74 0 1.46 0 2.91.71 5.09 13.08 38.5 16.67 77.7 18.87 117.66v14.58c0 17.41-.71 13.74 13.75 19.58 5.83 2.17 12.33 2.91 18.16 7.25 4.38 0 5.09-3.62 5.09-6.54l-2.17-23.96v-66.83c-.71-11.67 1.46-23.25 2.91-34.16l.05-.06z" fill="#c2bfbf"/>
+                    </g>
+                  </svg>
+                  &nbsp;&nbsp;MongoDB
+                </div>
+                <div class="skill_percentage">75%</div>
+              </div>
+              <div class="skill_bar" style="width: 75%;">
+                <div class="skill_bar-slider"></div>
+              </div>
+            </div>
+
+            <div class="skill font-weight-bold">
+              <div class="skill_title d-flex justify-content-between ">
+                <div class="skill_name">
+                  <svg width="5em" class="mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 231 30" preserveAspectRatio="xMinYMid">
+                    <path d="M99.61,19.52h15.24l-8.05-13L92,30H85.27l18-28.17a4.29,4.29,0,0,1,7-.05L128.32,30h-6.73l-3.17-5.25H103l-3.36-5.23m69.93,5.23V0.28h-5.72V27.16a2.76,2.76,0,0,0,.85,2,2.89,2.89,0,0,0,2.08.87h26l3.39-5.25H169.54M75,20.38A10,10,0,0,0,75,.28H50V30h5.71V5.54H74.65a4.81,4.81,0,0,1,0,9.62H58.54L75.6,30h8.29L72.43,20.38H75M14.88,30H32.15a14.86,14.86,0,0,0,0-29.71H14.88a14.86,14.86,0,1,0,0,29.71m16.88-5.23H15.26a9.62,9.62,0,0,1,0-19.23h16.5a9.62,9.62,0,1,1,0,19.23M140.25,30h17.63l3.34-5.23H140.64a9.62,9.62,0,1,1,0-19.23h16.75l3.38-5.25H140.25a14.86,14.86,0,1,0,0,29.71m69.87-5.23a9.62,9.62,0,0,1-9.26-7h24.42l3.36-5.24H200.86a9.61,9.61,0,0,1,9.26-7h16.76l3.35-5.25h-20.5a14.86,14.86,0,0,0,0,29.71h17.63l3.35-5.23h-20.6" transform="translate(-0.02 0)" style="fill:#C74634"/>
+                  </svg>
+                  Oracle DB
+                </div>
+                <div class="skill_percentage">85%</div>
+              </div>
+              <div class="skill_bar" style="width: 85%;">
+                <div class="skill_bar-slider"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- other technologies -->
+        <div class="row d-flex justify-content-between align-items-center" style="margin-top: 5rem;">
+          <!-- progress -->
+          <div class="order-2 col-md-7 order-md-1 other-progress">
+            <div class="skill font-weight-bold">
+              <div class="skill_title d-flex justify-content-between ">
+                <div class="skill_name">
+                  <svg width="2em" xmlns="http://www.w3.org/2000/svg" class="mr-3 ionicon" viewBox="0 0 512 512">
+                    <title>Layers</title>
+                    <path d="M434.8 137.65l-149.36-68.1c-16.19-7.4-42.69-7.4-58.88 0L77.3 137.65c-17.6 8-17.6 21.09 0 29.09l148 67.5c16.89 7.7 44.69 7.7 61.58 0l148-67.5c17.52-8 17.52-21.1-.08-29.09zM160 308.52l-82.7 37.11c-17.6 8-17.6 21.1 0 29.1l148 67.5c16.89 7.69 44.69 7.69 61.58 0l148-67.5c17.6-8 17.6-21.1 0-29.1l-79.94-38.47" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/>
+                    <path d="M160 204.48l-82.8 37.16c-17.6 8-17.6 21.1 0 29.1l148 67.49c16.89 7.7 44.69 7.7 61.58 0l148-67.49c17.7-8 17.7-21.1.1-29.1L352 204.48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/>
+                  </svg>
+                  MEAN Stack
+                </div>
+                <div class="skill_percentage">85%</div>
+              </div>
+              <div class="skill_bar" style="width: 85%;">
+                <div class="skill_bar-slider"></div>
+              </div>
+            </div>
+
+            <div class="skill font-weight-bold">
+              <div class="skill_title d-flex justify-content-between ">
+                <div class="skill_name">
+                  <svg width="2em" xmlns="http://www.w3.org/2000/svg" class="mr-3 ionicon" viewBox="0 0 512 512">
+                    <title>Layers</title>
+                    <path d="M434.8 137.65l-149.36-68.1c-16.19-7.4-42.69-7.4-58.88 0L77.3 137.65c-17.6 8-17.6 21.09 0 29.09l148 67.5c16.89 7.7 44.69 7.7 61.58 0l148-67.5c17.52-8 17.52-21.1-.08-29.09zM160 308.52l-82.7 37.11c-17.6 8-17.6 21.1 0 29.1l148 67.5c16.89 7.69 44.69 7.69 61.58 0l148-67.5c17.6-8 17.6-21.1 0-29.1l-79.94-38.47" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/>
+                    <path d="M160 204.48l-82.8 37.16c-17.6 8-17.6 21.1 0 29.1l148 67.49c16.89 7.7 44.69 7.7 61.58 0l148-67.49c17.7-8 17.7-21.1.1-29.1L352 204.48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/>
+                  </svg>
+                  MERN Stack
+                </div>
+                <div class="skill_percentage">85%</div>
+              </div>
+              <div class="skill_bar" style="width: 85%;">
+                <div class="skill_bar-slider"></div>
+              </div>
+            </div>
+           
+            <div class="skill font-weight-bold">
+              <div class="skill_title d-flex justify-content-between ">
+                <div class="skill_name">
+                  <svg width="2em" class="mr-3" version="1.1" id="GraphQL_Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 400" enable-background="new 0 0 400 400" xml:space="preserve">
+                    <g>
+                      <g>
+                        <g>
+                          
+                            <rect x="122" y="-0.4" transform="matrix(-0.866 -0.5 0.5 -0.866 163.3196 363.3136)" fill="#E535AB" width="16.6" height="320.3"/>
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <rect x="39.8" y="272.2" fill="#E535AB" width="320.3" height="16.6"/>
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          
+                            <rect x="37.9" y="312.2" transform="matrix(-0.866 -0.5 0.5 -0.866 83.0693 663.3409)" fill="#E535AB" width="185" height="16.6"/>
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          
+                            <rect x="177.1" y="71.1" transform="matrix(-0.866 -0.5 0.5 -0.866 463.3409 283.0693)" fill="#E535AB" width="185" height="16.6"/>
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          
+                            <rect x="122.1" y="-13" transform="matrix(-0.5 -0.866 0.866 -0.5 126.7903 232.1221)" fill="#E535AB" width="16.6" height="185"/>
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          
+                            <rect x="109.6" y="151.6" transform="matrix(-0.5 -0.866 0.866 -0.5 266.0828 473.3766)" fill="#E535AB" width="320.3" height="16.6"/>
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <rect x="52.5" y="107.5" fill="#E535AB" width="16.6" height="185"/>
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          <rect x="330.9" y="107.5" fill="#E535AB" width="16.6" height="185"/>
+                        </g>
+                      </g>
+                      <g>
+                        <g>
+                          
+                            <rect x="262.4" y="240.1" transform="matrix(-0.5 -0.866 0.866 -0.5 126.7953 714.2875)" fill="#E535AB" width="14.5" height="160.9"/>
+                        </g>
+                      </g>
+                      <path fill="#E535AB" d="M369.5,297.9c-9.6,16.7-31,22.4-47.7,12.8c-16.7-9.6-22.4-31-12.8-47.7c9.6-16.7,31-22.4,47.7-12.8   C373.5,259.9,379.2,281.2,369.5,297.9"/>
+                      <path fill="#E535AB" d="M90.9,137c-9.6,16.7-31,22.4-47.7,12.8c-16.7-9.6-22.4-31-12.8-47.7c9.6-16.7,31-22.4,47.7-12.8   C94.8,99,100.5,120.3,90.9,137"/>
+                      <path fill="#E535AB" d="M30.5,297.9c-9.6-16.7-3.9-38,12.8-47.7c16.7-9.6,38-3.9,47.7,12.8c9.6,16.7,3.9,38-12.8,47.7   C61.4,320.3,40.1,314.6,30.5,297.9"/>
+                      <path fill="#E535AB" d="M309.1,137c-9.6-16.7-3.9-38,12.8-47.7c16.7-9.6,38-3.9,47.7,12.8c9.6,16.7,3.9,38-12.8,47.7   C340.1,159.4,318.7,153.7,309.1,137"/>
+                      <path fill="#E535AB" d="M200,395.8c-19.3,0-34.9-15.6-34.9-34.9c0-19.3,15.6-34.9,34.9-34.9c19.3,0,34.9,15.6,34.9,34.9   C234.9,380.1,219.3,395.8,200,395.8"/>
+                      <path fill="#E535AB" d="M200,74c-19.3,0-34.9-15.6-34.9-34.9c0-19.3,15.6-34.9,34.9-34.9c19.3,0,34.9,15.6,34.9,34.9   C234.9,58.4,219.3,74,200,74"/>
+                    </g>
+                    </svg>
+                  GraphQL / REST
+                </div>
+                <div class="skill_percentage">70%</div>
+              </div>
+              <div class="skill_bar" style="width: 70%;">
+                <div class="skill_bar-slider"></div>
+              </div>
+            </div>
+            
+            <div class="skill font-weight-bold">
+              <div class="skill_title d-flex justify-content-between ">
+                <div class="skill_name"><i class="mr-3 fab fa-docker fa-2x" style="color: #0db7ed;"></i>Docker</div>
+                <div class="skill_percentage">60%</div>
+              </div>
+              <div class="skill_bar" style="width: 60%;">
+                <div class="skill_bar-slider"></div>
+              </div>
+            </div>
+
+          </div>
+          <!-- description -->
+          <div class="order-1 mx-auto px-md-5 order-md-2 col-md-5 other-description">
+            <h3 class="mb-3">Other Technologies
+            </h3>
+            <p class="lead">Also worked upon these amazing stacks and technologies.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =================================================================================================== -->
+    <!-- Timeline -->
+    <section id="timeline" class="mb-5 timeline-section">
+      <div class="container">
+        <!-- title -->
+        <div class="text-center row">
+          <div class="m-4 col timeline-title">
+            <h1 class="mb-3 display-5 text-uppercase">Timeline</h1>
+            <div class="underline"></div>
+          </div>
+        </div>
+
+        <div class="mt-4 row">
+          <div class="col-md-12">
+            <ul class="timeline">
+              <!-- this 'data-date' attribute value is read in the css -->
+              <li class="event event-1" data-date="Jun, 2009">
+                <h3>Graduation - Computer Engineering</h3>
+                <p>Graduated in Computer Engineering from Pune University, India.</p>
+              </li>
+              <li class="event event-2" data-date="Feb, 2010">
+                <h3>Diploma in Advanced Computing</h3>
+                <p>Completed 6 months course to receive Diploma in Advanced Computing.</p>
+              </li>
+              <li class="event event-3" data-date="Apr, 2010">
+                <h3>Fresher &#8212; Cybage Softwares Pvt. Ltd / M.S (Software Engg.)</h3>
+                <p>Joined Cybage Softwares Pvt. Ltd. as a Java Developer where I got opportunity to work on few projects in the ManLog and T&H domains.</p>
+                <p>During my service in Cybage, I also completed my Masters in Software Engg. from BITS, Pilani via distance learning programme.</p>
+              </li>
+              <li class="event event-4" data-date="May, 2014">
+                <h3>Lead Developer &#8212; Cognizant Technology Solutions, Pvt. Ltd.</h3>
+                <p>Joined Cognizant as Sr. Developer and later got promoted to Lead Developer. Here I woek as a Full Stack Developer for a reputed client in the BFS domain.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      
+      </div>
+      
+    </section>
+    
+    <!-- =================================================================================================== -->
+    <!-- Work -->
+    <section id="work" class="mb-5 work-section">
+      <div class="container">
+        <!-- title -->
+        <div class="text-center row">
+          <div class="m-4 col work-title">
+            <h1 class="mb-3 display-5 text-uppercase">Work</h1>
+            <div class="underline"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <!-- works filter -->
+        <ul class="my-4 text-center list-inline text-uppercase font-weight-bold">
+          <!-- data-filter => our custom data attribute to filter images based on given value (used in script.js) -->
+          <li class="list-inline-item work-list-item active-item" data-filter="all">All <span class="mx-3 mx-md-5 text-muted">/</span></li>
+          <li class="list-inline-item work-list-item" data-filter="filter-html">Pure HTML <span class="mx-3 mx-md-5 text-muted">/</span></li>
+          <li class="list-inline-item work-list-item" data-filter="filter-angular">Angular <span class="mx-3 mx-md-5 text-muted">/</span></li>
+          <li class="list-inline-item work-list-item" data-filter="filter-react">React <span class="mx-3 mx-md-5 text-muted">/</span></li>
+          <li class="list-inline-item work-list-item" data-filter="filter-ionic">Ionic</li>
+        </ul>
+
+        <!-- works -->
+        <!-- flex-wrap is must -->
+        <div class="flex-wrap d-flex justify-content-center">
+          
+          <div class="m-4 card filter filter-html">
+            <img src="./images/projects/html-omnifood.jpg" alt="Omnifood Project" class="card-img card-img-top">
+            <div class="card-body">
+              <h4 class="text-center card-title">Omnifood App</h4>
+              <p class="text-center card-text"><span class="pill">HTML5</span> <span class="pill">CSS3</span> </p>
+              <div class="card-actions d-flex justify-content-between">
+                <a href="https://github.com/sameerbhilare/Omnifood" target="_blank"><i class="fab fa-github fa-lg text-dark"></i></a>
+                <a href="https://sameerbhilare.github.io/Omnifood/" target="_blank"><i class="fas fa-link fa-lg text-dark"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="m-4 card filter filter-html">
+            <img src="./images/projects/nature-tours.png" alt="Nature Tours Project" class="card-img card-img-top">
+            <div class="card-body">
+              <h4 class="text-center card-title">Nature Tours</h4>
+              <p class="text-center card-text"><span class="pill">HTML5</span> <span class="pill">CSS3</span> </p>
+              <div class="card-actions d-flex justify-content-between">
+                <a href="https://github.com/sameerbhilare/NatureTours" target="_blank"><i class="fab fa-github text-dark fa-lg"></i></a>
+                <a href="https://sameerbhilare.github.io/NatureTours/" target="_blank"><i class="fas fa-link text-dark fa-lg"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="m-4 card filter filter-html">
+            <img src="./images/projects/pwa.png" alt="PWAGram Project" class="card-img card-img-top">
+            <div class="card-body">
+              <h4 class="text-center card-title">PWAGram</h4>
+              <p class="text-center card-text"><span class="pill">PWA</span> </p>
+              <div class="card-actions d-flex justify-content-between">
+                <a href="https://github.com/sameerbhilare/PWAGram" target="_blank"><i class="fab fa-github text-dark fa-lg"></i></a>
+                <a href="https://pwa-insta-sameerb.herokuapp.com" target="_blank"><i class="fas fa-link text-dark fa-lg"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="m-4 card filter filter-react">
+            <img src="./images/projects/nextjs-blog.png" alt="NextJS Blog Project" class="card-img card-img-top">
+            <div class="card-body">
+              <h4 class="text-center card-title">NextJS Blog</h4>
+              <p class="text-center card-text"><span class="pill">React</span> <span class="pill">NextJS</span> </p>
+              <div class="card-actions d-flex justify-content-between">
+                <a href="https://github.com/sameerbhilare/nextjs-blog" target="_blank"><i class="fab fa-github text-dark fa-lg"></i></a>
+                <a href="https://nextjs-blog-b386wno1j-sameerbhilare.vercel.app" target="_blank"><i class="fas fa-link text-dark fa-lg"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="m-4 card filter filter-react">
+            <img src="./images/projects/gatsby-recipes.jpeg" alt="Gatsby Recipes Project" class="card-img card-img-top">
+            <div class="card-body">
+              <h4 class="text-center card-title">Gatsby Recipes</h4>
+              <p class="text-center card-text"><span class="pill">React</span> <span class="pill">GatsbyJS</span> </p>
+              <div class="card-actions d-flex justify-content-between">
+                <a href="https://github.com/sameerbhilare/Gatsby/tree/main/Workspace/01-recipes-app" target="_blank"><i class="fab fa-github text-dark fa-lg"></i></a>
+                <a href="https://gatsbyrecipes-sameerbhilare.netlify.app" target="_blank"><i class="fas fa-link text-dark fa-lg"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="m-4 card filter filter-react">
+            <img src="./images/projects/gatsby-portfolio.png" alt="Gatsby Portfolio Project" class="card-img card-img-top">
+            <div class="card-body">
+              <h4 class="text-center card-title">Gatsby Portfolio</h4>
+              <p class="text-center card-text"><span class="pill">React</span> <span class="pill">GatsbyJS</span> <span class="pill">Strapi</span></p>
+              <div class="card-actions d-flex justify-content-between">
+                <a href="https://github.com/sameerbhilare/Gatsby/tree/main/Workspace" target="_blank"><i class="fab fa-github text-dark fa-lg"></i></a>
+                <a href="https://sameerbhilare-portfolio-gatby-strapi.netlify.app" target="_blank"><i class="fas fa-link text-dark fa-lg"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="m-4 card filter filter-angular">
+            <img src="./images/projects/ng-recipes.jpeg" alt="Angular Recipes Project" class="card-img card-img-top">
+            <div class="card-body">
+              <h4 class="text-center card-title">Angular Recipes</h4>
+              <p class="text-center card-text"><span class="pill">Angular</span> </p>
+              <div class="card-actions d-flex justify-content-between">
+                <a href="https://github.com/sameerbhilare/Angular/tree/master/workspace/course-project" target="_blank"><i class="fab fa-github text-dark fa-lg"></i></a>
+                <a href="https://ng-course-recipe-book-f2477.web.app/auth" target="_blank"><i class="fas fa-link text-dark fa-lg"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="m-4 card filter filter-angular">
+            <img src="./images/projects/ng-fitness.jpg" alt="Angular Fitness Tracker Project" class="card-img card-img-top">
+            <div class="card-body">
+              <h4 class="text-center card-title">Angular Fitness Tracker</h4>
+              <p class="text-center card-text"><span class="pill">Angular</span><span class="pill">Angular Material</span> </p>
+              <div class="card-actions d-flex justify-content-between">
+                <a href="https://github.com/sameerbhilare/Angular-Material/tree/master/workspace/fitness-tracker" target="_blank"><i class="fab fa-github text-dark fa-lg"></i></a>
+                <a href="https://ng-fitness-tracker-a5db9.web.app" target="_blank"><i class="fas fa-link text-dark fa-lg"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="m-4 card filter filter-angular filter-ionic">
+            <img src="./images/projects/ionic-book-place-app.jpg" alt="Ionic Book Place app" class="card-img card-img-top">
+            <div class="card-body">
+              <h4 class="text-center card-title">Ionic Book Place</h4>
+              <p class="text-center card-text"><span class="pill">Angular</span><span class="pill">Ionic</span> </p>
+              <div class="card-actions d-flex justify-content-between">
+                <a href="https://github.com/sameerbhilare/ionic-book-place-app" target="_blank"><i class="fab fa-github text-dark fa-lg"></i></a>
+                <a href="https://sameerbhilare-ionic-book-place.netlify.app" target="_blank"><i class="fas fa-link text-dark fa-lg"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    
+    <!-- =================================================================================================== -->
+    <!-- Contact -->
+    <section id="contact" class="mb-5 contact-section">
+      <div class="container">
+        <!-- title -->
+        <div class="text-center row">
+          <div class="m-4 col contact-title">
+            <h1 class="mb-3 display-5 text-uppercase">Get in Touch</h1>
+            <div class="underline"></div>
+          </div>
+        </div>
+        <div class="text-center row">
+          <div class="m-4 col">
+            <p class="lead">Anything in mind for me? Be sure to drop me a message!</p>
+          </div>
+        </div>
+
+        <!-- contact form -->
+        <div class="row">
+          <div class="mx-auto col-10 col-md-9 col-lg-7 alert-area">
+            <!-- placeholder for alerts. Alerts will be added on form submission in script.js -->
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="mx-auto col-10 col-md-9 col-lg-7">
+            <form action="#" class="contact-form">
+              <div class="form-group">
+                <label for="name" class="label">Name</label>
+                <input type="text" class="p-2 form-control input" id="name" required autocomplete="off">
+              </div>
+              <div class="form-group">
+                <label for="email" class="label">Email</label>
+                <input type="email" class="p-2 form-control input" id="email" required autocomplete="off">
+              </div>
+              <div class="form-group">
+                <label for="message" class="label">Your Message</label>
+                <textarea name="message" class="p-2 form-control input" id="message" rows="5" required></textarea>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn text-uppercase font-weight-bold submit-button">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <!-- =================================================================================================== -->
+  <!-- Footer -->
+  <footer id="footer" class="bg-dark">
+    <div class="container">
+      <div class="py-2 row">
+        <div class="mx-auto text-center col-sm-10">
+          <a href="#" id="logo-footer">
+            <img src="./images/logo-nobg.png" alt="Logo" class="img-fluid"/>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="mx-auto text-center col-sm-10 footer-social-icons">
+          <a href="https://in.linkedin.com/in/sameer-bhilare-083a1516" target="_blank" class="mr-4"><i class="text-white-50 fab fa-linkedin-in fa-lg"></i></a>
+          <a href="https://twitter.com/sameer59" target="_blank" ><i class="text-white-50 fab fa-twitter fa-lg"></i></a>
+          <a href="https://github.com/sameerbhilare" target="_blank" class="ml-4"><i class="text-white-50 fab fa-github fa-lg"></i></a>
+        </div>
+      </div>
+      <div class="py-4 row">
+        <div class="mx-auto text-center col-sm-10" style="border-top: 1px solid #777">
+          <p class="pt-2 text-white-50">Designed and Developed by <a href="#contact" class="author">Sameer Bhilare</a>. &copy; Copyright 2021. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- using standard jQuery CDN link instead of slimmed version in order for the gallary filtering with effect works properly -->
+  <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
