@@ -275,6 +275,9 @@ body {
   }
 }
 
+.span-border-top {
+  border-top: 4px solid var(--current-primary);
+}
 .banner-section {
   height: 100vh;
 }
