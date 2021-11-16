@@ -17,6 +17,10 @@ $(document).ready(function () {
     var themeId = $(this).attr('id');
     // add class. Ensure that link 'id' and name of the theme class should be same ***
     $('body').addClass(themeId);
+
+    // change logo image as per selected theme color
+    var selectedColor = $(this).attr('data-color');
+    $('.img-logo').attr('src', './images/logo-' + selectedColor + '-nobg.png');
   });
 
   // set currently clicked menu item as active

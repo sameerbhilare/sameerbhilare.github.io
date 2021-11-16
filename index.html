@@ -42,7 +42,7 @@
 
       <!-- not using navbar-logo to avoid unnecessary padding at the top and causing main content visible beneath it when scrolled -->
       <a href="#" class="color-primary d-none d-md-inline-block" id="logo">
-        <img src="./images/logo-nobg.png" alt="Logo" class="img-fluid"/>
+        <img src="./images/logo-blue-nobg.png" alt="Logo" class="img-fluid img-logo"/>
       </a>
 
       <!-- custom nav toggler -->
@@ -81,11 +81,12 @@
               </svg>
             </a>
             <div class="dropdown-menu">
-              <a class="dropdown-item theme-link" id="theme-blue"><span class="theme-circle" style="background-color: #007bff;"></span></a>
-              <a class="dropdown-item theme-link" id="theme-red"><span class="theme-circle" style="background-color: #d63031;"></span></a>
-              <a class="dropdown-item theme-link" id="theme-violet"><span class="theme-circle" style="background-color: #3B3B98;"></span></a>
-              <a class="dropdown-item theme-link" id="theme-green"><span class="theme-circle" style="background-color: #007f5f;"></span></a>
-              <a class="dropdown-item theme-link" id="theme-purple"><span class="theme-circle" style="background-color: #802B67;"></span></a>
+              <!-- data-color is used in script.js to change logo as per selected theme -->
+              <a class="dropdown-item theme-link" data-color="blue" id="theme-blue"><span class="theme-circle" style="background-color: #007bff;"></span></a>
+              <a class="dropdown-item theme-link" data-color="red" id="theme-red"><span class="theme-circle" style="background-color: #d63031;"></span></a>
+              <a class="dropdown-item theme-link" data-color="violet" id="theme-violet"><span class="theme-circle" style="background-color: #3B3B98;"></span></a>
+              <a class="dropdown-item theme-link" data-color="green" id="theme-green"><span class="theme-circle" style="background-color: #007f5f;"></span></a>
+              <a class="dropdown-item theme-link" data-color="purple" id="theme-purple"><span class="theme-circle" style="background-color: #802B67;"></span></a>
           </li>
         </ul>
       </div>
@@ -707,7 +708,7 @@
       <div class="py-2 row">
         <div class="mx-auto text-center col-sm-10">
           <a href="#" id="logo-footer">
-            <img src="./images/logo-nobg.png" alt="Logo" class="img-fluid"/>
+            <img src="./images/logo-blue-nobg.png" alt="Logo" class="img-fluid img-logo"/>
           </a>
         </div>
       </div>
