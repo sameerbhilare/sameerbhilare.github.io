@@ -7,6 +7,18 @@ $(document).ready(function () {
     $('.nav-button').toggleClass('change'); // add/remove 'change' class on click of nav-button
   });
 
+  $('.theme-link').click(function () {
+    // remove all classes starting with 'theme-'
+    $('body').removeClass(function (index, className) {
+      return (className.match(/(^|\s)theme-\S+/g) || []).join(' ');
+    });
+
+    // get 'id' od the current link
+    var themeId = $(this).attr('id');
+    // add class. Ensure that link 'id' and name of the theme class should be same ***
+    $('body').addClass(themeId);
+  });
+
   // set currently clicked menu item as active
   // $('.navbar-nav a').on('click', function () {
   //   $('.navbar-nav').find('li a.nav-active').removeClass('nav-active');
@@ -34,9 +46,16 @@ $(document).ready(function () {
 
   // window scroll event - to animate banner
   $(window).scroll(function () {
+    let vWidth = $(window).width();
+    let minPos = 0;
+    if (vWidth <= 576) {
+      minPos = 750;
+    } else {
+      minPos = 325;
+    }
     let position = $(this).scrollTop();
     //console.log(position);
-    if (position <= 325) {
+    if (position <= minPos) {
       // banner
       $('.banner-section').css('opacity', '1'); // when user scrolls up
       $('.banner-section').addClass('fromTopHeader');
@@ -51,9 +70,19 @@ $(document).ready(function () {
 
   // window scroll event - to animate About
   $(window).scroll(function () {
+    let vWidth = $(window).width();
+    let minPos = 0;
+    let maxPos = 0;
+    if (vWidth <= 576) {
+      minPos = 325;
+      maxPos = 1000;
+    } else {
+      minPos = 325;
+      maxPos = 1300;
+    }
     let position = $(this).scrollTop();
-    // console.log(position);
-    if (position > 325 && position < 1300) {
+
+    if (position > minPos && position < maxPos) {
       // about
       $('.about-title').css('opacity', '1'); // when user scrolls up
       $('.about-title').addClass('sectionTitleAnimation');
@@ -68,28 +97,51 @@ $(document).ready(function () {
 
   // window scroll event - to animate About
   $(window).scroll(function () {
+    let vWidth = $(window).width();
+    let minPos = 0;
+    let maxPos = 0;
+    let aboutDescriptionAnimation = 'fromRight';
+    if (vWidth <= 576) {
+      minPos = 350;
+      maxPos = 1500;
+      aboutDescriptionAnimation = 'aboutDescAnimationSM';
+    } else {
+      minPos = 350;
+      maxPos = 1300;
+      aboutDescriptionAnimation = 'fromRight';
+    }
     let position = $(this).scrollTop();
-    // console.log(position);
-    if (position > 350 && position < 1300) {
+    //console.log(position);
+    if (position > minPos && position < maxPos) {
       $('.about-img').css('opacity', '1'); // when user scrolls up
       $('.about-img').addClass('fromLeft');
 
       $('.about-description').css('opacity', '1'); // when user scrolls up
-      $('.about-description').addClass('fromRight');
+      $('.about-description').addClass(aboutDescriptionAnimation);
     } else {
       $('.about-img').css('opacity', '0'); // when user scrolls up from bottom, we should not show the header to have better UX
       $('.about-img').removeClass('fromLeft');
 
       $('.about-description').css('opacity', '0'); // when user scrolls up from bottom, we should not show the header to have better UX
-      $('.about-description').removeClass('fromRight');
+      $('.about-description').removeClass(aboutDescriptionAnimation);
     }
   });
 
   // window scroll event - to animate skills title
   $(window).scroll(function () {
+    let vWidth = $(window).width();
+    let minPos = 0;
+    let maxPos = 0;
+    if (vWidth <= 576) {
+      minPos = 950;
+      maxPos = 1900;
+    } else {
+      minPos = 1100;
+      maxPos = 1700;
+    }
     let position = $(this).scrollTop();
     //console.log(position);
-    if (position > 1100 && position < 1700) {
+    if (position > minPos && position < maxPos) {
       $('.skills-title').css('opacity', '1'); // when user scrolls up
       $('.skills-title').addClass('sectionTitleAnimation');
     } else {
@@ -119,9 +171,19 @@ $(document).ready(function () {
   // **** FOR SEPERATE SKILLS
   // window scroll event - to animate frontend skills
   $(window).scroll(function () {
+    let vWidth = $(window).width();
+    let minPos = 0;
+    let maxPos = 0;
+    if (vWidth <= 576) {
+      minPos = 1300;
+      maxPos = 2550;
+    } else {
+      minPos = 1100;
+      maxPos = 2400;
+    }
     let position = $(this).scrollTop();
     //console.log(position);
-    if (position > 1100 && position < 2400) {
+    if (position > minPos && position < maxPos) {
       // set width same as parent so that it will transition over given time in 'skill_bar-slider'
       $('.frontend-progress * .skill_bar-slider').each(function () {
         $(this).width($(this).parent().width());
@@ -134,9 +196,19 @@ $(document).ready(function () {
 
   // window scroll event - to animate backend skills
   $(window).scroll(function () {
+    let vWidth = $(window).width();
+    let minPos = 0;
+    let maxPos = 0;
+    if (vWidth <= 576) {
+      minPos = 2000;
+      maxPos = 3050;
+    } else {
+      minPos = 1500;
+      maxPos = 2800;
+    }
     let position = $(this).scrollTop();
     //console.log(position);
-    if (position > 1500 && position < 2800) {
+    if (position > minPos && position < maxPos) {
       // set width same as parent so that it will transition over given time in 'skill_bar-slider'
       $('.backend-progress * .skill_bar-slider').each(function () {
         $(this).width($(this).parent().width());
@@ -149,9 +221,19 @@ $(document).ready(function () {
 
   // window scroll event - to animate other skills
   $(window).scroll(function () {
+    let vWidth = $(window).width();
+    let minPos = 0;
+    let maxPos = 0;
+    if (vWidth <= 576) {
+      minPos = 2500;
+      maxPos = 3550;
+    } else {
+      minPos = 1800;
+      maxPos = 3500;
+    }
     let position = $(this).scrollTop();
     //console.log(position);
-    if (position > 1800 && position < 3500) {
+    if (position > minPos && position < maxPos) {
       // set width same as parent so that it will transition over given time in 'skill_bar-slider'
       $('.other-progress * .skill_bar-slider').each(function () {
         $(this).width($(this).parent().width());
@@ -164,9 +246,19 @@ $(document).ready(function () {
 
   // window scroll event - to animate timeline
   $(window).scroll(function () {
+    let vWidth = $(window).width();
+    let minPos = 0;
+    let maxPos = 0;
+    if (vWidth <= 576) {
+      minPos = 3000;
+      maxPos = 4800;
+    } else {
+      minPos = 2500;
+      maxPos = 4600;
+    }
     let position = $(this).scrollTop();
     //console.log(position);
-    if (position > 2500 && position < 4600) {
+    if (position > minPos && position < maxPos) {
       $('.timeline-title').css('opacity', '1'); // when user scrolls up
       $('.timeline-title').addClass('sectionTitleAnimation');
 
@@ -233,9 +325,19 @@ $(document).ready(function () {
 
   // window scroll event - to animate Work title
   $(window).scroll(function () {
+    let vWidth = $(window).width();
+    let minPos = 0;
+    let maxPos = 0;
+    if (vWidth <= 576) {
+      minPos = 4200;
+      maxPos = 5050;
+    } else {
+      minPos = 3450;
+      maxPos = 4700;
+    }
     let position = $(this).scrollTop();
     //console.log(position);
-    if (position > 3450 && position < 4700) {
+    if (position > minPos && position < maxPos) {
       $('.work-title').css('opacity', '1'); // when user scrolls up
       $('.work-title').addClass('sectionTitleAnimation');
     } else {
@@ -246,6 +348,16 @@ $(document).ready(function () {
 
   // window scroll event - to animate Work cards
   $(window).scroll(function () {
+    let vWidth = $(window).width();
+    let minPos = 0;
+    let maxPos = 0;
+    if (vWidth <= 576) {
+      minPos = 4500;
+      maxPos = 5500;
+    } else {
+      minPos = 3450;
+      maxPos = 4200;
+    }
     let position = $(this).scrollTop();
     //console.log(position);
     if (position > 3450 && position < 4200) {
@@ -257,9 +369,16 @@ $(document).ready(function () {
 
   // window scroll event - to animate contact title
   $(window).scroll(function () {
+    let vWidth = $(window).width();
+    let maxPos = 0;
+    if (vWidth <= 576) {
+      maxPos = 4800;
+    } else {
+      maxPos = 4200;
+    }
     let position = $(this).scrollTop();
     //console.log(position);
-    if (position > 4200) {
+    if (position > maxPos) {
       $('.contact-title').css('opacity', '1'); // when user scrolls up
       $('.contact-title').addClass('sectionTitleAnimation');
     } else {

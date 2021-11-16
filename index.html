@@ -10,15 +10,15 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <!--  Essential META Tags -->
-  <meta property="og:title" content="Sameer Bhilare | Portfolio">
+  <meta property="og:title" content="Sameer Bhilare | Full Stack Developer">
   <meta property="og:type" content="article" />
   <meta property="og:image" content="https://sameerbhilare.netlify.app/images/site-img.png">
   <meta property="og:url" content="https://sameerbhilare.netlify.app/index.html">
   <meta property="og:description" content="I am a Full Stack Developer and this is my portfolio.">
-  <meta property="og:site_name" content="Sameer Bhilare | Portfolio">
+  <meta property="og:site_name" content="Sameer Bhilare | Full Stack Developer">
   
   <!--  Non-Essential, But Required for Analytics -->
-  <meta name="twitter:title" content="Sameer Bhilare | Portfolio">
+  <meta name="twitter:title" content="Sameer Bhilare | Full Stack Developer">
   <meta name="twitter:description" content="I am a Full Stack Developer and this is my portfolio.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:creator" content="@sameer59">
@@ -29,9 +29,9 @@
   <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <title>Sameer Bhilare | Portfolio</title>
+  <title>Sameer Bhilare | Full Stack Developer</title>
 </head>
-<body class="bg-light" style="position: relative;" data-spy="scroll" data-target="#mynavbar">
+<body class="bg-light theme-blue" style="position: relative;" data-spy="scroll" data-target="#mynavbar">
   
   <!-- =================================================================================================== -->
   <!-- Navigation -->
@@ -73,9 +73,23 @@
           <li class="nav-item">
             <a href="#contact" class="m-2 nav-link menu-item">Contact</a>
           </li>
+          <li class="nav-item dropdown align-self-center">
+            <a class="nav-link menu-item dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" class="ionicon" viewBox="0 0 512 512">
+                <title>Color Fill</title>
+                <path d="M419.1 337.45a3.94 3.94 0 00-6.1 0c-10.5 12.4-45 46.55-45 77.66 0 27 21.5 48.89 48 48.89h0c26.5 0 48-22 48-48.89 0-31.11-34.3-65.26-44.9-77.66zM387 287.9L155.61 58.36a36 36 0 00-51 0l-5.15 5.15a36 36 0 000 51l52.89 52.89 57-57L56.33 263.2a28 28 0 00.3 40l131.2 126a28.05 28.05 0 0038.9-.1c37.8-36.6 118.3-114.5 126.7-122.9 5.8-5.8 18.2-7.1 28.7-7.1h.3a6.53 6.53 0 004.57-11.2z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/>
+              </svg>
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item theme-link" id="theme-blue"><span class="theme-circle" style="background-color: #007bff;"></span></a>
+              <a class="dropdown-item theme-link" id="theme-red"><span class="theme-circle" style="background-color: #d63031;"></span></a>
+              <a class="dropdown-item theme-link" id="theme-violet"><span class="theme-circle" style="background-color: #3B3B98;"></span></a>
+              <a class="dropdown-item theme-link" id="theme-green"><span class="theme-circle" style="background-color: #007f5f;"></span></a>
+              <a class="dropdown-item theme-link" id="theme-purple"><span class="theme-circle" style="background-color: #802B67;"></span></a>
+          </li>
         </ul>
       </div>
-
+      
     </div>
   </nav>
   </header>
@@ -87,12 +101,12 @@
       
       <div class="container">
         <div class="row d-flex justify-content-between align-items-center">
-          <div class="col-md-7">
-            <h1 class="pb-2 mb-4 display-3 display-md-2">Hi</h1>
-            <h1 class="display-3 display-md-2">
+          <div class="order-2 col-md-7 order-md-1">
+            <h1 class="pb-2 mb-4 display-3">Hi</h1>
+            <h1 class="display-3">
               <span style="border-top: 4px solid #007bff">I'm</span> <span class="color-primary">Sameer</span>
             </h1>
-            <h2>Full Stack Web Developer</h2>
+            <h2>Full Stack Developer</h2>
             <div class="home-social">
               <a href="https://in.linkedin.com/in/sameer-bhilare-083a1516" target="_blank" class="mr-4"><i class="fab fa-linkedin-in text-dark"></i></a>
               <a href="https://twitter.com/sameer59" target="_blank" class="mr-4"><i class="fab fa-twitter text-dark"></i></a>
@@ -106,7 +120,7 @@
               <img src="./images/Sameer.jpg" alt="Photo of Sameer" class="img-fluid" id="img-profile">
             </div>
           </div> -->
-          <div class="mt-5 col-md-4 parent-wrapper">
+          <div class="order-1 mt-1 mt-md-5 col-md-4 parent-wrapper order-md-2">
             <div class="m-auto img-wrapper">
               <img src="./images/Sameer.jpg" alt="Photo of Sameer" class="img-fluid" id="img-profile">
             </div>
@@ -120,7 +134,7 @@
     
     <!-- =================================================================================================== -->
     <!-- About -->
-    <section id="about" class="mb-5 about-section">
+    <section id="about" class="mb-0 mb-md-5 about-section">
       <div class="container">
         <!-- title -->
         <div class="text-center row">
@@ -135,7 +149,7 @@
             <!-- <img src="https://via.placeholder.com/864X1080" alt="image" class="img-fluid img-thumbnail"> -->
             <img src="./images/Sameer-About.png" alt="image" class="img-fluid about-img">
           </div>
-          <div class="px-5 mx-auto text-justify col-md-7 about-description">
+          <div class="px-4 mx-auto text-justify px-md-5 col-md-7 about-description">
             <p class="lead">
               My name is <mark>Sameer Bhilare</mark> and I am a Full Stack Web Developer who specializes in creating dynamic and beautiful web applications. 
             </p>
@@ -157,7 +171,7 @@
 
     <!-- =================================================================================================== -->
     <!-- Skills -->
-    <section id="skills" class="mb-5 skills-section">
+    <section id="skills" class="mb-0 mb-md-5 skills-section">
       <div class="container">
         <!-- title -->
         <div class="text-center row">
@@ -457,7 +471,7 @@
 
     <!-- =================================================================================================== -->
     <!-- Timeline -->
-    <section id="timeline" class="mb-5 timeline-section">
+    <section id="timeline" class="mb-0 mb-md-5 timeline-section">
       <div class="container">
         <!-- title -->
         <div class="text-center row">
@@ -498,7 +512,7 @@
     
     <!-- =================================================================================================== -->
     <!-- Work -->
-    <section id="work" class="mb-5 work-section">
+    <section id="work" class="mb-0 mb-md-5 work-section">
       <div class="container">
         <!-- title -->
         <div class="text-center row">
@@ -639,7 +653,7 @@
     
     <!-- =================================================================================================== -->
     <!-- Contact -->
-    <section id="contact" class="mb-5 contact-section">
+    <section id="contact" class="mb-0 mb-md-5 contact-section">
       <div class="container">
         <!-- title -->
         <div class="text-center row">
@@ -706,12 +720,11 @@
       </div>
       <div class="py-4 row">
         <div class="mx-auto text-center col-sm-10" style="border-top: 1px solid #777">
-          <p class="pt-2 text-white-50">Designed and Developed by <a href="#contact" class="author">Sameer Bhilare</a>. &copy; Copyright 2021. All Rights Reserved.</p>
+          <p class="pt-2 text-white-50">Designed and Developed by <a href="#contact" class="author">Sameer Bhilare</a>. <span class="d-block d-lg-inline">&copy; Copyright 2021. All Rights Reserved.</span></p>
         </div>
       </div>
     </div>
   </footer>
-
 
   <!-- using standard jQuery CDN link instead of slimmed version in order for the gallary filtering with effect works properly -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

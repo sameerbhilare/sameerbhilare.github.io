@@ -23,6 +23,7 @@ body {
   /* --text-color: #212529; this is default */
 
   /* theme wise */
+  /* blue theme */
   --theme-blue-primary: #007bff;
   --theme-blue-shade-1: rgba(0, 123, 255, 1.25);
   --theme-blue-shade-2: rgba(0, 123, 255, 0.7);
@@ -32,6 +33,48 @@ body {
   --theme-blue-shade-6: rgba(0, 123, 255, 0.1);
   --theme-blue-shade-7: rgba(0, 123, 255, 0);
 
+  /* red theme */
+  --theme-red-primary: #d63031;
+  --theme-red-shade-1: rgba(214, 48, 49, 1.25);
+  --theme-red-shade-2: rgba(214, 48, 49, 0.7);
+  --theme-red-shade-3: rgba(214, 48, 49, 0.4);
+  --theme-red-shade-4: rgba(214, 48, 49, 0.3);
+  --theme-red-shade-5: rgba(214, 48, 49, 0.15);
+  --theme-red-shade-6: rgba(214, 48, 49, 0.1);
+  --theme-red-shade-7: rgba(214, 48, 49, 0);
+
+  /* violet theme */
+  --theme-violet-primary: #3b3b98;
+  --theme-violet-shade-1: rgba(59, 59, 152, 1.25);
+  --theme-violet-shade-2: rgba(59, 59, 152, 0.7);
+  --theme-violet-shade-3: rgba(59, 59, 152, 0.4);
+  --theme-violet-shade-4: rgba(59, 59, 152, 0.3);
+  --theme-violet-shade-5: rgba(59, 59, 152, 0.15);
+  --theme-violet-shade-6: rgba(59, 59, 152, 0.1);
+  --theme-violet-shade-7: rgba(59, 59, 152, 0);
+
+  /* green theme */
+  --theme-green-primary: #007f5f;
+  --theme-green-shade-1: rgba(0, 127, 95, 1.25);
+  --theme-green-shade-2: rgba(0, 127, 95, 0.7);
+  --theme-green-shade-3: rgba(0, 127, 95, 0.4);
+  --theme-green-shade-4: rgba(0, 127, 95, 0.3);
+  --theme-green-shade-5: rgba(0, 127, 95, 0.15);
+  --theme-green-shade-6: rgba(0, 127, 95, 0.1);
+  --theme-green-shade-7: rgba(0, 127, 95, 0);
+
+  /* purple theme */
+  --theme-purple-primary: #802b67;
+  --theme-purple-shade-1: rgba(128, 43, 103, 1.25);
+  --theme-purple-shade-2: rgba(128, 43, 103, 0.7);
+  --theme-purple-shade-3: rgba(128, 43, 103, 0.4);
+  --theme-purple-shade-4: rgba(128, 43, 103, 0.3);
+  --theme-purple-shade-5: rgba(128, 43, 103, 0.15);
+  --theme-purple-shade-6: rgba(128, 43, 103, 0.1);
+  --theme-purple-shade-7: rgba(128, 43, 103, 0);
+}
+
+.theme-blue {
   /* current theme */
   --current-primary: var(--theme-blue-primary);
   --current-shade-1: var(--theme-blue-shade-1);
@@ -42,8 +85,79 @@ body {
   --current-shade-6: var(--theme-blue-shade-6);
   --current-shade-7: var(--theme-blue-shade-7);
 }
+
+.theme-red {
+  /* current theme */
+  --current-primary: var(--theme-red-primary);
+  --current-shade-1: var(--theme-red-shade-1);
+  --current-shade-2: var(--theme-red-shade-2);
+  --current-shade-3: var(--theme-red-shade-3);
+  --current-shade-4: var(--theme-red-shade-4);
+  --current-shade-5: var(--theme-red-shade-5);
+  --current-shade-6: var(--theme-red-shade-6);
+  --current-shade-7: var(--theme-red-shade-7);
+}
+
+.theme-violet {
+  /* current theme */
+  --current-primary: var(--theme-violet-primary);
+  --current-shade-1: var(--theme-violet-shade-1);
+  --current-shade-2: var(--theme-violet-shade-2);
+  --current-shade-3: var(--theme-violet-shade-3);
+  --current-shade-4: var(--theme-violet-shade-4);
+  --current-shade-5: var(--theme-violet-shade-5);
+  --current-shade-6: var(--theme-violet-shade-6);
+  --current-shade-7: var(--theme-violet-shade-7);
+}
+
+.theme-green {
+  /* current theme */
+  --current-primary: var(--theme-green-primary);
+  --current-shade-1: var(--theme-green-shade-1);
+  --current-shade-2: var(--theme-green-shade-2);
+  --current-shade-3: var(--theme-green-shade-3);
+  --current-shade-4: var(--theme-green-shade-4);
+  --current-shade-5: var(--theme-green-shade-5);
+  --current-shade-6: var(--theme-green-shade-6);
+  --current-shade-7: var(--theme-green-shade-7);
+}
+
+.theme-purple {
+  /* current theme */
+  --current-primary: var(--theme-purple-primary);
+  --current-shade-1: var(--theme-purple-shade-1);
+  --current-shade-2: var(--theme-purple-shade-2);
+  --current-shade-3: var(--theme-purple-shade-3);
+  --current-shade-4: var(--theme-purple-shade-4);
+  --current-shade-5: var(--theme-purple-shade-5);
+  --current-shade-6: var(--theme-purple-shade-6);
+  --current-shade-7: var(--theme-purple-shade-7);
+}
+
 /* ============================================================================ */
 /* Common */
+.theme-circle {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.dropdown-menu.show {
+  display: inline;
+}
+@media (max-width: 991px) {
+  .dropdown-menu.show {
+    display: inline-flex;
+  }
+}
+.dropdown-item {
+  cursor: pointer;
+}
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: var(--shadow-light-2);
+}
 
 .main {
   margin-top: 0;
@@ -55,7 +169,19 @@ body {
 }
 
 .sectionTitleAnimation {
+  -webkit-animation: sectionTitleAnimation 1s;
   animation: sectionTitleAnimation 1s;
+}
+
+@-webkit-keyframes sectionTitleAnimation {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
 @keyframes sectionTitleAnimation {
@@ -71,16 +197,40 @@ body {
 
 /* animation on scroll when we reach the mission part of the mission section */
 .fromLeft {
+  -webkit-animation: fromLeft 1.5s ease;
   animation: fromLeft 1.5s ease;
 }
 
 .fromRight {
+  -webkit-animation: fromRight 1.5s ease;
   animation: fromRight 1.5s ease;
+}
+
+@-webkit-keyframes fromLeft {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 @keyframes fromLeft {
   0% {
     transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fromRight {
+  0% {
+    transform: translateX(30px);
     opacity: 0;
   }
   100% {
@@ -106,6 +256,11 @@ body {
 
 /* ============================================================================ */
 /* Banner */
+@media (max-width: 576px) {
+  .display-3 {
+    font-size: 4rem;
+  }
+}
 
 /* change based on scroll */
 .custom-navbar {
@@ -135,7 +290,19 @@ section {
 
 /* animation on scroll when we reach the mission part of the mission section */
 .fromTopHeader {
+  -webkit-animation: fromTopHeader 1.5s ease;
   animation: fromTopHeader 1.5s ease;
+}
+
+@-webkit-keyframes fromTopHeader {
+  0% {
+    transform: translateY(-90px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
 @keyframes fromTopHeader {
@@ -235,6 +402,7 @@ section {
 /* END => circle with a cutout image and shadow as well */
 
 .parent-wrapper {
+  -webkit-filter: drop-shadow(0 15px 30px var(--current-shade-2));
   filter: drop-shadow(0 15px 30px var(--current-shade-2));
 }
 
@@ -267,21 +435,46 @@ section {
 .home-social {
   margin-top: 4rem;
 }
+@media (max-width: 576px) {
+  .home-social {
+    margin-top: 3rem;
+  }
+}
+
 .home-social * {
   font-size: 1.5rem;
   /* same as .fromTopHeader class because it is required when page loaded for first time as there is no scrolling yet */
+  -webkit-animation-name: socialMedia;
   animation-name: socialMedia;
+  -webkit-animation-duration: 1.2s;
   animation-duration: 1.2s;
+  -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
+  -webkit-animation-fill-mode: backwards;
   animation-fill-mode: backwards; /* to hide the element before animation starts */
 }
 
 /* animation on scroll when we reach the mission part of the mission section */
 .socialMedia {
+  -webkit-animation-name: socialMedia;
   animation-name: socialMedia;
+  -webkit-animation-duration: 1.2s;
   animation-duration: 1.2s;
+  -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
+  -webkit-animation-fill-mode: backwards;
   animation-fill-mode: backwards; /* to hide the element before animation starts */
+}
+
+@-webkit-keyframes socialMedia {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
 @keyframes socialMedia {
@@ -332,6 +525,17 @@ mark {
   border-bottom: 5px solid var(--current-primary);
 }
 
+/* abount-description animation for small devices */
+.aboutDescAnimationSM {
+  -webkit-animation-name: socialMedia;
+  animation-name: socialMedia;
+  -webkit-animation-duration: 1.2s;
+  animation-duration: 1.2s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards; /* to hide the element before animation starts */
+}
 /* ============================================================================ */
 /* Skills */
 
@@ -444,7 +648,6 @@ mark {
 }
 
 .timeline .event:after {
-  -webkit-box-shadow: 0 0 0 3px var(--current-primary);
   box-shadow: 0 0 0 3px var(--current-primary);
   left: -55.8px;
   background: var(--shadow-light-3);
@@ -482,30 +685,49 @@ mark {
 }
 
 .animate-event-1 {
+  -webkit-animation-name: sectionTitleAnimation;
   animation-name: sectionTitleAnimation;
+  -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease;
   animation-timing-function: ease;
+  -webkit-animation-fill-mode: backwards;
   animation-fill-mode: backwards; /* to hide the element before animation starts */
 }
 .animate-event-2 {
+  -webkit-animation-name: sectionTitleAnimation;
   animation-name: sectionTitleAnimation;
+  -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
+  -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
+  -webkit-animation-timing-function: ease;
   animation-timing-function: ease;
+  -webkit-animation-fill-mode: backwards;
   animation-fill-mode: backwards; /* to hide the element before animation starts */
 }
 .animate-event-3 {
+  -webkit-animation-name: sectionTitleAnimation;
   animation-name: sectionTitleAnimation;
+  -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
+  -webkit-animation-delay: 1.6s;
   animation-delay: 1.6s;
+  -webkit-animation-timing-function: ease;
   animation-timing-function: ease;
+  -webkit-animation-fill-mode: backwards;
   animation-fill-mode: backwards; /* to hide the element before animation starts */
 }
 .animate-event-4 {
+  -webkit-animation-name: sectionTitleAnimation;
   animation-name: sectionTitleAnimation;
+  -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
+  -webkit-animation-delay: 2.4s;
   animation-delay: 2.4s;
+  -webkit-animation-timing-function: ease;
   animation-timing-function: ease;
+  -webkit-animation-fill-mode: backwards;
   animation-fill-mode: backwards; /* to hide the element before animation starts */
 }
 
@@ -546,6 +768,9 @@ mark {
 .work-list-item {
   color: var(--shadow-dark-3);
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none; /* disable user selecting the item */
 }
 
@@ -554,10 +779,31 @@ mark {
 }
 
 .workCardAnimation {
+  -webkit-animation-timing-function: ease;
   animation-timing-function: ease;
+  -webkit-animation-name: workCardAnimation;
   animation-name: workCardAnimation;
+  -webkit-animation-duration: 1.2s;
   animation-duration: 1.2s;
+  -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
+}
+
+@-webkit-keyframes workCardAnimation {
+  0% {
+    transform: scale(1) perspective(2px);
+    box-shadow: 5px 8px 20px var(--shadow-light-1);
+  }
+
+  50% {
+    transform: scale(1.03) perspective(2px);
+    box-shadow: 0 5px 15px var(--shadow-dark-4);
+  }
+
+  100% {
+    transform: transcale(1);
+    box-shadow: 5px 8px 20px var(--shadow-light-1);
+  }
 }
 
 @keyframes workCardAnimation {
@@ -592,7 +838,7 @@ mark {
 .submit-button {
   border-radius: 10rem;
   padding: 10px 50px;
-  background-color: var(--current-primary);
+  background-color: var(--current-shade-1);
   position: relative;
   transform: translateY(0px);
   transition: all 0.3s;
@@ -606,6 +852,7 @@ mark {
   width: 100%;
   height: 100%;
   opacity: 0.1;
+  -webkit-clip-path: circle(0 at center);
   clip-path: circle(0 at center);
   background-color: var(--shadow-light-3);
   transition: 0.5s ease-out;
@@ -613,6 +860,7 @@ mark {
 
 /* ripple effect on hover using clip-path */
 .submit-button:hover:before {
+  -webkit-clip-path: circle(100px at center);
   clip-path: circle(100px at center);
 }
 
