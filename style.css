@@ -841,6 +841,7 @@ mark {
 .submit-button {
   border-radius: 10rem;
   padding: 10px 50px;
+  color: white;
   background-color: var(--current-shade-1);
   position: relative;
   transform: translateY(0px);
