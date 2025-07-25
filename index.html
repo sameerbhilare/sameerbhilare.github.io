@@ -152,18 +152,20 @@
           </div>
           <div class="px-4 mx-auto text-justify px-md-5 col-md-7 about-description">
             <p class="lead">
-              My name is <mark>Sameer Bhilare</mark> and I am a Full Stack Web Developer who specializes in creating dynamic and beautiful web applications. 
+              I’m <mark>Sameer Bhilare</mark>, a Full Stack Web Developer with over 15 years of experience in building dynamic, scalable, and visually engaging web applications.
             </p>
             <p class="lead">
-              I have been in the field for more than 11 years, and have been loving every minute of it. 
-              I am a professional developer and overall thinker who strives to achieve the best results. 
+              My expertise spans both front-end and back-end technologies, enabling me to deliver end-to-end solutions that align with business goals and enhance user experience. 
             </p>
             <p class="lead">
-              My mantra for life is &#8212; <br> <span class="font-italic"><mark>&quot;Do what you love. Love what you do.&quot;</mark></span>
+              Passionate about clean code and continuous learning, I thrive on solving complex challenges and driving projects to success.
+            </p>
+            <p class="lead">
+              My personal mantra for life is &#8212; <br> <span class="font-italic"><mark>&quot;Do what you love. Love what you do.&quot;</mark></span>
               <i class="far fa-smile"></i>
             </p>
             <p class="lead">
-              Check out the Work section below to see what I’ve been up to lately.
+              Explore my Work section to see some of my recent projects and contributions.
             </p>
           </div>
         </div>
@@ -238,9 +240,9 @@
             <div class="skill font-weight-bold">
               <div class="skill_title d-flex justify-content-between ">
                 <div class="skill_name"><i class="mr-3 fab fa-react fa-2x" style="color:#61DBFB"></i>React / NextJS / GatsbyJS</div>
-                <div class="skill_percentage">55%</div>
+                <div class="skill_percentage">65%</div>
               </div>
-              <div class="skill_bar" style="width: 55%;">
+              <div class="skill_bar" style="width:65%;">
                 <div class="skill_bar-slider"></div>
               </div>
             </div>
@@ -487,21 +489,21 @@
             <ul class="timeline">
               <!-- this 'data-date' attribute value is read in the css -->
               <li class="event event-1" data-date="Jun, 2009">
-                <h3>Graduation - Computer Engineering</h3>
-                <p>Graduated in Computer Engineering from Pune University, India.</p>
+                <h3>Graduation &#8212; Computer Engineering</h3>
+                <p>Earned a Bachelor’s degree in Computer Engineering from Pune University, India.</p>
               </li>
               <li class="event event-2" data-date="Feb, 2010">
                 <h3>Diploma in Advanced Computing</h3>
-                <p>Completed 6 months course to receive Diploma in Advanced Computing.</p>
+                <p>Obtained a Diploma in Advanced Computing after completing a 6‑month intensive course.</p>
               </li>
               <li class="event event-3" data-date="Apr, 2010">
                 <h3>Fresher &#8212; Cybage Softwares Pvt. Ltd / M.S (Software Engg.)</h3>
-                <p>Joined Cybage Softwares Pvt. Ltd. as a Java Developer where I got opportunity to work on few projects in the ManLog and T&H domains.</p>
-                <p>During my service in Cybage, I also completed my Masters in Software Engg. from BITS, Pilani via distance learning programme.</p>
+                <p>Joined Cybage Software Pvt. Ltd. as a Java Developer, contributing to multiple projects in the ManLog and Travel & Hospitality domains.</p>
+                <p>During my tenure, I also pursued and successfully completed a Master’s degree in Software Engineering from BITS Pilani through a distance learning program.</p>
               </li>
               <li class="event event-4" data-date="May, 2014">
                 <h3>Lead Developer &#8212; Cognizant Technology Solutions, Pvt. Ltd.</h3>
-                <p>Joined Cognizant as Sr. Developer and later got promoted to Lead Developer. Here I work as a Full Stack Developer for a reputed client in the BFS domain.</p>
+                <p>Joined Cognizant as a Senior Developer and was later promoted to Lead Developer. In this role, I serve as a Full Stack Developer for a leading client in the Banking and Financial Services (BFS) domain.</p>
               </li>
             </ul>
           </div>
@@ -665,7 +667,7 @@
         </div>
         <div class="text-center row">
           <div class="m-4 col">
-            <p class="lead">Anything in mind for me? Be sure to drop me a message!</p>
+            <p class="lead">Have an idea in mind or an opportunity to collaborate? <br> Feel free to drop me a message — I’d love to connect!</p>
           </div>
         </div>
 
@@ -721,7 +723,7 @@
       </div>
       <div class="py-4 row">
         <div class="mx-auto text-center col-sm-10" style="border-top: 1px solid #777">
-          <p class="pt-2 text-white-50">Designed and Developed by <a href="#contact" class="author">Sameer Bhilare</a>. <span class="d-block d-lg-inline">&copy; Copyright 2021. All Rights Reserved.</span></p>
+          <p class="pt-2 text-white-50">Designed and Developed by <a href="#contact" class="author">Sameer Bhilare</a>. <span class="d-block d-lg-inline">&copy; Copyright <span id="year"></span>. All Rights Reserved.</span></p>
         </div>
       </div>
     </div>
@@ -732,5 +734,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
   <script src="script.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
