@@ -733,43 +733,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-  <script src="script.js"></script>  
-  <!-- AI Chatbot -->
-  <script src="https://cdn.botpress.cloud/webchat/v3.2/inject.js" defer></script>
-  <script src="https://files.bpcontent.cloud/2025/07/26/15/20250726150123-UYHNZFUZ.js" defer></script>
+  <script src="script.js"></script>    
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
-
-    let chatOpen = false;
-
-    // Function to open chat
-    function openChat() {
-      console.log('openChat');
-      
-      window.botpressWebChat.sendEvent({ type: 'show' });
-      chatOpen = true;
-
-      // Push a history state so back button can close chat
-      history.pushState({ chatOpen: true }, "");
-    }
-
-    // Function to close chat
-    function closeChat() {
-      console.log('closeChat');
-      window.botpressWebChat.sendEvent({ type: 'hide' });
-      chatOpen = false;
-    }
-
-    // Intercept back button (popstate)
-    window.addEventListener('popstate', function (event) {
-      if (chatOpen) {
-        closeChat();
-
-        // Prevent navigation by restoring original history
-        // so user stays on same page
-        history.pushState(null, "");
-      }
-    });
   </script>
+  <!-- AI Chatbot -->
+  <script src="https://cdn.botpress.cloud/webchat/v3.2/inject.js" defer></script>
+  <script src="https://files.bpcontent.cloud/2025/07/26/15/20250726150123-UYHNZFUZ.js" defer></script>     
 </body>
 </html>
