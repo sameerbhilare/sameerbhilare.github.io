@@ -141,7 +141,7 @@ $(document).ready(function () {
       maxPos = 1900;
     } else {
       minPos = 1100;
-      maxPos = 1700;
+      maxPos = 2150
     }
     let position = $(this).scrollTop();
     //console.log(position);
