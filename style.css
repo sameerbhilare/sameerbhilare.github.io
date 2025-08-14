@@ -737,6 +737,12 @@ mark {
 /* ============================================================================ */
 /* Work */
 
+.work-cards-container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
 /* in addition to bootstrap's 'card' class styles, below styles will be appllied */
 .card {
   width: 350px;
